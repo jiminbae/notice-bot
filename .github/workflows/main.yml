@@ -1,0 +1,40 @@
+name: KNU Notice Bot
+
+on:
+  schedule:
+    - cron: '*/15 0-9 * * 1-5'
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 코드 가져오기
+        uses: actions/checkout@v3
+
+      - name: 파이썬 설정 (3.12 버전)
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: 라이브러리 설치
+        run: |
+          pip install -r requirements.txt
+
+      - name: 공지 확인 및 알림 전송
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python main.py
+
+      - name: 변경된 파일(로그) 저장
+        run: |
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "action@github.com"
+          git add *.txt
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update: Notice Log [skip ci]" && git push)
