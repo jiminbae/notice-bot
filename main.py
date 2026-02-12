@@ -76,8 +76,8 @@ def check_new_notice():
         if not os.path.exists(filename):
             print(f"   🎉 {board_name}: 첫 실행!")
             
-            msg = f"[{board_name} - 최신 글]\n{title}"
-            telegram_sender.send_msg(msg, link)
+            # msg = f"[{board_name} - 최신 글]\n{title}"
+            # telegram_sender.send_msg(msg, link)
             
             with open(filename, "w", encoding="utf-8") as f:
                 f.write(current_fingerprint)
@@ -109,7 +109,4 @@ def check_new_notice():
 if __name__ == "__main__":
     print("공지사항 알림 시작")
     #telegram_sender.send_msg("봇이 실행되었습니다. 최신 공지를 확인합니다 👀")
-    
-    while True:
-        check_new_notice()
-        time.sleep(300) # 5분 대기
+    check_new_notice()
