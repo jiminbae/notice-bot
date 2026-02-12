@@ -2,13 +2,20 @@ name: KNU Notice Bot
 
 on:
   schedule:
-    - cron: '*/15 0-9 * * 1-5'
-    - cron: '0 * * * *'
+    # 평일(월~금) 업무 시간 (UTC 0~9시 = KST 09~18시)
+    # 7, 22, 37, 52분
+    - cron: '7-59/15 0-9 * * 1-5'
+
+    #매 시간 07분 
+    - cron: '7 * * * *'
+
+  # 수동 실행 버튼
   workflow_dispatch:
 
 jobs:
   run-bot:
     runs-on: ubuntu-latest
+    # 파일 수정 권한 (필수)
     permissions:
       contents: write
 
@@ -36,5 +43,7 @@ jobs:
         run: |
           git config --global user.name "GitHub Action Bot"
           git config --global user.email "action@github.com"
+          
+          # 파일 변동 사항 확인 및 저장
           git add *.txt
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update: Notice Log [skip ci]" && git push)
