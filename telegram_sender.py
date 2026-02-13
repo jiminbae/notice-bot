@@ -5,8 +5,12 @@ TOKEN = os.environ.get("TELEGRAM_TOKEN")
 CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
 def send_msg(text, link=""):
+    """
+    text: 보낼 메시지 내용 (제목 등)
+    link: 공지사항 URL
+    """
     if link:
-        formatted_text = f"<b>{text}</b>\n\n<a href='{link}'> 🔗 공지 바로가기 🔗 </a>"
+        formatted_text = f"<b>{text}</b>\n\n<a href='{link}'>🔗 공지 바로가기 🔗</a>"
     else:
         formatted_text = text
 
@@ -29,5 +33,5 @@ def send_msg(text, link=""):
     except Exception as e:
         print(f"에러 발생: {e}")
 
-if __name__ == "__main__":
-    pass
+if __name__ == "__main__"
+    send_msg("테스트 메시지", "https://cse.knu.ac.kr")
