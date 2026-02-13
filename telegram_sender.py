@@ -33,5 +33,6 @@ def send_msg(text, link=""):
     except Exception as e:
         print(f"에러 발생: {e}")
 
-if __name__ == "__main__"
+if __name__ == "__main__":
     send_msg("테스트 메시지", "https://cse.knu.ac.kr")
+
