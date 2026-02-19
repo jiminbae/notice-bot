@@ -36,13 +36,13 @@ jobs:
         run: |
           python main.py
 
-  
       - name: 변경된 파일(로그) 저장
         run: |
           git config --global user.name "GitHub Action Bot"
           git config --global user.email "action@github.com"
           
-        
+          # json 파일 저장
           git add *.json
           
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update: Notice Log [skip ci]" && git push)
+          # 변경사항이 있으면 -> 커밋 -> 최신버전 당겨오기 Pull -> 푸시
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update: Notice Log [skip ci]" && git pull --rebase && git push)
