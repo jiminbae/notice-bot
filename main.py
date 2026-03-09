@@ -19,6 +19,11 @@ BOARDS = [
         "name": "💼 학부 인재 모집",
         "url": "https://cse.knu.ac.kr/bbs/board.php?bo_table=sub5_3_a",
         "file": "recruit_list_v2.json"
+    },
+    {
+        "name": "💼 취업 정보",
+        "url": "https://cse.knu.ac.kr/bbs/board.php?bo_table=sub5_3_b",
+        "file": "employment_list_v2.json"
     }
 ]
 # ==========================================
