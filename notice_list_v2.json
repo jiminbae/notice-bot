@@ -522,7 +522,7 @@
         "title": "[학생] 2026학년도 신입생 진로설계 패키지(웰컴 키트) 배부 안내(3.17.~19., 10:00~17:0…",
         "date": "2026-03-13",
         "link": "https://cse.knu.ac.kr/bbs/board.php?bo_table=sub5_1&wr_id=29082",
-        "content_hash": "a8f23078a0e4ec994515333c59ae2aa7"
+        "content_hash": "3b2bc27afcd41f5624bd12e91e384c73"
     },
     "29081": {
         "id": "29081",
@@ -544,5 +544,19 @@
         "date": "2026-03-13",
         "link": "https://cse.knu.ac.kr/bbs/board.php?bo_table=sub5_1&wr_id=29084",
         "content_hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "29086": {
+        "id": "29086",
+        "title": "[TUTOR] 2026학년도 1학기 학부생 TUTOR 모집 안내(4차)",
+        "date": "2026-03-17",
+        "link": "https://cse.knu.ac.kr/bbs/board.php?bo_table=sub5_1&wr_id=29086",
+        "content_hash": "8eb268bc556dc04b13deee0828723b88"
+    },
+    "29085": {
+        "id": "29085",
+        "title": "2026학년도 상반기 익산시 대학생 학자금 대출이자 지원 사업 안내",
+        "date": "2026-03-17",
+        "link": "https://cse.knu.ac.kr/bbs/board.php?bo_table=sub5_1&wr_id=29085",
+        "content_hash": "126795e0fd4225123892ef233d23ad9b"
     }
 }
