@@ -533,9 +533,30 @@
     },
     "1649": {
         "id": "1649",
-        "title": "[한국필립모리스] INKOMPASS 채용연계형 인턴 모집 안",
+        "title": "[한국필립모리스] INKOMPASS 채용연계형 인턴 모집 안내",
         "date": "2026-04-22",
         "link": "https://cse.knu.ac.kr/bbs/board.php?bo_table=sub5_3_b&wr_id=1649",
         "content_hash": "0ebfc6454aea8b509719632e297d0ff8"
+    },
+    "1652": {
+        "id": "1652",
+        "title": "경북 RISE UP \"취업박람회\" 개최 안내",
+        "date": "2026-04-23",
+        "link": "https://cse.knu.ac.kr/bbs/board.php?bo_table=sub5_3_b&wr_id=1652",
+        "content_hash": "704ffce76330885d145f7c1258f18aac"
+    },
+    "1651": {
+        "id": "1651",
+        "title": "[SSAFY 뉴스레터] 취업역량과 AI 활용역량을 한 번에! SSAFY 16기 모집 (~5/11)",
+        "date": "2026-04-23",
+        "link": "https://cse.knu.ac.kr/bbs/board.php?bo_table=sub5_3_b&wr_id=1651",
+        "content_hash": "de671506be662189fd34cc51769c1316"
+    },
+    "1650": {
+        "id": "1650",
+        "title": "코디세이 AI 네이티브 과정 전액 무료 교육 안내",
+        "date": "2026-04-23",
+        "link": "https://cse.knu.ac.kr/bbs/board.php?bo_table=sub5_3_b&wr_id=1650",
+        "content_hash": "9e3867bbd38288709285ea96053531c5"
     }
 }
